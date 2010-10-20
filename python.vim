@@ -6,7 +6,7 @@ endif
 " remove the keywords. we'll re-add them below
 syntax clear pythonOperator
 
-syntax match pythonOperator "is"
+syntax keyword pythonOperator is
 
 syntax match pyNiceOperator "\<in\>" conceal cchar=∈
 syntax match pyNiceOperator "\<or\>" conceal cchar=∨
