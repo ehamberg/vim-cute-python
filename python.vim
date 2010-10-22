@@ -17,6 +17,7 @@ syntax match pyNiceOperator ">=" conceal cchar=≥
 syntax match pyNiceOperator "==" conceal cchar=≡
 syntax match pyNiceOperator "!=" conceal cchar=≠
 syntax match pyNiceOperator "None" conceal cchar=∅
+syntax match pyNiceOperator "\<not in" conceal cchar=∉
 
 syntax keyword pyNiceStatement lambda conceal cchar=λ
 
