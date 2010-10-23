@@ -21,7 +21,7 @@ syntax match pyNiceOperator "\<not in\>" conceal cchar=∉
 syntax keyword pyNiceStatement lambda conceal cchar=λ
 
 hi link pyNiceOperator Operator
-hi link pyNiceOperator Statement
+hi link pyNiceStatement Statement
 hi! link Conceal Operator
 
 set conceallevel=2
