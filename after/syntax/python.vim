@@ -25,4 +25,4 @@ hi link pyNiceOperator Operator
 hi link pyNiceStatement Statement
 hi! link Conceal Operator
 
-set conceallevel=2
+setlocal conceallevel=2
