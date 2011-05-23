@@ -35,6 +35,9 @@ syntax match pyNiceOperator "\( \|\)\*\*\( \|\)2\>" conceal cchar=²
 syntax match pyNiceOperator "\( \|\)\*\*\( \|\)3\>" conceal cchar=³
 syntax match pyNiceOperator "\( \|\)\*\*\( \|\)n\>" conceal cchar=ⁿ
 
+" Your background, and taste, may affect whether you like # for cardinality ;)
+syntax keyword pyNiceBuiltin len conceal cchar=#
+
 syntax keyword pyNiceStatement lambda conceal cchar=λ
 syntax keyword pyNiceStatement None conceal cchar=∅
 
