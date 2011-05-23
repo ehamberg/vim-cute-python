@@ -32,6 +32,7 @@ syntax match pyNiceOperator "\<\%(math\.\|\)ceil\>" conceal cchar=⌈
 syntax match pyNiceOperator "\<\%(math\.\|\)floor\>" conceal cchar=⌊
 
 syntax keyword pyNiceStatement lambda conceal cchar=λ
+syntax keyword pyNiceStatement None conceal cchar=∅
 
 hi link pyNiceOperator Operator
 hi link pyNiceStatement Statement
