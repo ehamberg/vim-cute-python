@@ -26,6 +26,13 @@ syntax keyword pyNiceOperator sum conceal cchar=∑
 syntax match pyNiceOperator "\<\%(math\.\)\?sqrt\>" conceal cchar=√
 syntax match pyNiceKeyword "\<\%(math\.\)\?pi\>" conceal cchar=π
 
+syntax match pyNiceOperator " \* " conceal cchar=∙
+syntax match pyNiceOperator " / " conceal cchar=÷
+" The following are special cases where it /may/ be okay to ignore PEP8
+syntax match pyNiceOperator "\( \|\)\*\*\( \|\)2\>" conceal cchar=²
+syntax match pyNiceOperator "\( \|\)\*\*\( \|\)3\>" conceal cchar=³
+syntax match pyNiceOperator "\( \|\)\*\*\( \|\)n\>" conceal cchar=ⁿ
+
 syntax keyword pyNiceStatement lambda conceal cchar=λ
 
 hi link pyNiceOperator Operator
