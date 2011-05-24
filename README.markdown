@@ -1,32 +1,37 @@
-Use unicode characters for Python operators, turning the following:
+Use unicode characters for some Python operators and built-in functions, turning
+the following:
 
+```python
     map (lambda x: x, [1,2,3])
 
     def foo(e, a):
-        if e in [1,2,3]:
-            if not a:
-                return 3
+        if e in [1,2,3] and not a:
+            return math.sqrt(math.pi)
         else:
-            return 4
+            return sum([1,2,3])
+```
 
 into
 
+```python
     map (λ x: x, [1,2,3])
 
     def foo(e, a):
-        if e ∈ [1,2,3]:
-            if ¬a:
-                return 3
+        if e ∈ [1,2,3] ∧ ¬a:
+            return √(π)
         else:
-            return 4
+            return ∑([1,2,3])
+```
 
 Screenshot: <http://hamberg.no/erlend/files/cute_python.png>
 
-*This does not – at any point — alter your source code*. It simply uses Vim's new
+*This does not – at any point — alter your source code*. It simply uses Vim's
 “conceal” feature to “hide” **in** behind **∈**, etc. Whenever the cursor is at
 a line with concealed text, the text will be expanded.
+
+Vim ≥ 7.3 is required.
 
 To install, simply put python.vim in ~/.vim/after/syntax.
 
 This is very much inspired by
-<http://www.vim.org/scripts/script.php?script_id=3200>.
+<http://github.com/Twinside/vim-haskellConceal>
