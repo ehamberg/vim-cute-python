@@ -23,7 +23,9 @@ into
             return ∑([1,2,3])
 ```
 
-Screenshot: <http://hamberg.no/erlend/files/cute_python.png>
+Screenshot:
+
+<img src="http://hamberg.no/erlend/files/cute_python.png" title="Screenshot" />
 
 *This does not – at any point — alter your source code*. It simply uses Vim's
 “conceal” feature to “hide” **in** behind **∈**, etc. Whenever the cursor is at
