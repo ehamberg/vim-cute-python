@@ -30,6 +30,10 @@ syntax match pyNiceKeyword "\<\%(math\.\)\?pi\>" conceal cchar=π
 syntax match pyNiceOperator "\<\%(math\.\|\)ceil\>" conceal cchar=⌈
 syntax match pyNiceOperator "\<\%(math\.\|\)floor\>" conceal cchar=⌊
 
+syntax keyword pyNiceStatement int conceal cchar=ℤ
+syntax keyword pyNiceStatement float conceal cchar=ℝ
+syntax keyword pyNiceStatement complex conceal cchar=ℂ
+
 syntax match pyNiceOperator " \* " conceal cchar=∙
 syntax match pyNiceOperator " / " conceal cchar=÷
 " The following are special cases where it /may/ be okay to ignore PEP8
