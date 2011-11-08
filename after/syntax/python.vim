@@ -16,7 +16,8 @@ syntax match pyNiceOperator "\<and\>" conceal cchar=∧
 syntax match pyNiceOperator "\<not\%( \|\>\)" conceal cchar=¬
 syntax match pyNiceOperator "<=" conceal cchar=≤
 syntax match pyNiceOperator ">=" conceal cchar=≥
-syntax match pyNiceOperator "==" conceal cchar=≡
+" only conceal “==” if alone, to avoid concealing SCM conflict markers
+syntax match pyNiceOperator "=\@<!===\@!" conceal cchar=≡
 syntax match pyNiceOperator "!=" conceal cchar=≠
 
 syntax keyword pyNiceOperator sum conceal cchar=∑
