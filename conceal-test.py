@@ -1,7 +1,7 @@
 # conceal test -- lines should match
 
 """
-if a ≠ None: pass """
+if a is not None: pass """
 if a is not None: pass
 
 """
