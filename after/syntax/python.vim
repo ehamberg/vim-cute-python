@@ -19,7 +19,7 @@ syntax match pyNiceOperator "<=" conceal cchar=≤
 syntax match pyNiceOperator ">=" conceal cchar=≥
 " only conceal “==” if alone, to avoid concealing SCM conflict markers
 syntax match pyNiceOperator "=\@<!===\@!" conceal cchar=≡
-syntax match pyNiceOperator "!=" conceal cchar=≠
+syntax match pyNiceOperator "!=" conceal cchar=≢
 
 syntax keyword pyNiceOperator sum conceal cchar=∑
 syntax match pyNiceOperator "\<\%(math\.\)\?sqrt\>" conceal cchar=√

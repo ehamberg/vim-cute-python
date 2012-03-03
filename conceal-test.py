@@ -45,7 +45,7 @@ a or b
 sum([1,2,3])
 
 """
-if a ≠ b: pass """
+if a ≢ b: pass """
 if a != b: pass
 
 """
