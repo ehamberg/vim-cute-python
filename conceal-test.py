@@ -1,7 +1,7 @@
 # conceal test -- lines should match
 
 """
-if a ≠ None: pass """
+if a is not None: pass """
 if a is not None: pass
 
 """
@@ -45,7 +45,7 @@ a or b
 sum([1,2,3])
 
 """
-if a ≠ b: pass """
+if a ≢ b: pass """
 if a != b: pass
 
 """

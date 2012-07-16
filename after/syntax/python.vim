@@ -11,16 +11,15 @@ syntax match pythonOperator "\<is\>"
 syntax match pyNiceOperator "\<in\>" conceal cchar=∈
 syntax match pyNiceOperator "\<or\>" conceal cchar=∨
 syntax match pyNiceOperator "\<and\>" conceal cchar=∧
-" show “is not” as ≠
-syntax match pyNiceOperator "\<is not\>" conceal cchar=≠
-" include the space after “not” – if present – so that “not a” becomes “¬a”
-syntax match pyNiceOperator "\<not\%( \|\>\)" conceal cchar=¬
+" include the space after “not” – if present – so that “not a” becomes “¬a”.
+" also, don't hide “not” behind  ‘¬’ if it is after “is ”.
+syntax match pyNiceOperator "\%(is \)\@<!\<not\%( \|\>\)" conceal cchar=¬
 syntax match pyNiceOperator "\<not in\>" conceal cchar=∉
 syntax match pyNiceOperator "<=" conceal cchar=≤
 syntax match pyNiceOperator ">=" conceal cchar=≥
 " only conceal “==” if alone, to avoid concealing SCM conflict markers
 syntax match pyNiceOperator "=\@<!===\@!" conceal cchar=≡
-syntax match pyNiceOperator "!=" conceal cchar=≠
+syntax match pyNiceOperator "!=" conceal cchar=≢
 
 syntax keyword pyNiceOperator sum conceal cchar=∑
 syntax keyword pyNiceBuiltin all conceal cchar=∀
