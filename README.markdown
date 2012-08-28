@@ -36,5 +36,11 @@ like [Pathogen](https://github.com/tpope/vim-pathogen) (recommended).
 
 Vim ≥ 7.3 is required.
 
+The branch `moresymbols` includes commits from various people that add even more
+conceal replacements. I try to maintain a healthy balance in the `master`
+branch, but if you like to conceal even more operators or don't mind slight
+inaccuracies in what mathematical symbols are used to represent, you should have
+a look at the extra symbols in the `moresymbols` branch.
+
 This plug-in is very much inspired by
 <http://github.com/Twinside/vim-haskellConceal>
