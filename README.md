@@ -31,16 +31,18 @@ Screenshot:
 "conceal" feature to “hide” `in` behind `∈`, etc. Whenever the cursor is at
 a line with concealed text, the text will be expanded.
 
-To install, simply put `python.vim` in `~/.vim/after/syntax` or use something
-like [Pathogen](https://github.com/tpope/vim-pathogen) (recommended).
+To install, simply put `python.vim` in `~/.vim/after/syntax` or use a plug-in
+manager such as [vim-plug](https://github.com/junegunn/vim-plug) or
+[pathogen.vim](https://github.com/tpope/vim-pathogen).
 
 Vim ≥ 7.3 is required.
 
-The branch `moresymbols` includes commits from various people that add even more
-conceal replacements. I try to maintain a healthy balance in the `master`
-branch, but if you like to conceal even more operators or don't mind slight
-inaccuracies in what mathematical symbols are used to represent, you should have
-a look at the extra symbols in the `moresymbols` branch.
+The branch [`moresymbols`](https://github.com/ehamberg/vim-cute-python/tree/moresymbols)
+includes commits from various people that add even more conceal replacements. I
+try to maintain a healthy balance in the `master` branch, but if you like to
+conceal even more operators or don't mind slight inaccuracies in what
+mathematical symbols are used to represent, you should have a look at the extra
+symbols in the `moresymbols` branch.
 
 This plug-in is very much inspired by
 <http://github.com/Twinside/vim-haskellConceal>
