@@ -1,11 +1,11 @@
 # conceal test -- lines should match
 
 """
-if a is not None: pass """
+if a is not ∅: pass """
 if a is not None: pass
 
 """
-if b is None: pass """
+if b is ∅: pass """
 if b is None: pass
 
 """
